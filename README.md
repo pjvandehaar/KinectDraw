@@ -17,14 +17,14 @@ Your right hand is the brush, and the height of your left hand determines the br
 ### Instructions
 
 1. Visit to the simpleopenni install page.
-#. Follow the directions there for your OS. You should probably remove any other Kinect drivers (eg the official MS ones) that you have installed.
-#. Two options here; on my Windows 7 64-bit I used the first.
+2. Follow the directions there for your OS. You should probably remove any other Kinect drivers (eg the official MS ones) that you have installed.
+3. Two options here; on my Windows 7 64-bit I used the first.
 
     * Follow the link on the opensimpleni install page to download Java SE 7. Then, on the Processing homepage, download the "No Java" version. Ignore the part about a Java folder.
     * Just download Processing with Java from the homepage. (I haven't tried this but think it ought to work fine.)
 
-#. Run processing once to generate a sketches folder.
-#. When told to copy the file "SimpleOpenNI.zip", it actually means to extract it to there. (eg, it should wind up as a directory instead of a zip file.)
-#. Copy `KinectDraw.pde` into your sketches (eg ".../Documents/Processing/") folder.
-#. Open up processing; file->open `KinectDraw.pde`.
-#. Click sketch->present to run in fullscreen.
+4. Run processing once to generate a sketches folder.
+5. When told to copy the file "SimpleOpenNI.zip", it actually means to extract it to there. (eg, it should wind up as a directory instead of a zip file.)
+6. Copy `KinectDraw.pde` into your sketches (eg ".../Documents/Processing/") folder.
+7. Open up processing; file->open `KinectDraw.pde`.
+8. Click sketch->present to run in fullscreen.
