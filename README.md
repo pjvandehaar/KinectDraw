@@ -4,7 +4,9 @@ This is a Processing sketch that allows you to draw pictures using a computer an
 
 ## Usage
 
-Your right hand is the brush, and the height of your left hand determines the brush size.  To change paint color, reach your left hand down to a color bar.  To change color palette, touch one of the color palette bars.
+Your right hand is the brush, and the height of your left hand determines the brush size.  To change paint color, touch a color bar at the top of the screen.  To change which paint colors are available, touch a color group at the bottom of the screen.
+
+![Screenshot](https://raw.github.com/pjvandehaar/KinectDraw/master/screenshot.jpg)
 
 ## Installing
 
