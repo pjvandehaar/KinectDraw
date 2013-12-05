@@ -17,7 +17,6 @@ final int[][] jc = { //joint connections to draw
 int kinectWd, kinectHt;
 int[] users = new int[0];
 int[] cb; // colorbar, will be filled with values from pb (palettebar) in setup(). 
-PrintWriter pw = null;
 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
 
 //-- settings
@@ -37,7 +36,6 @@ final int[][] pb = {  //palettebar has sets of colors that can be put into color
 final int[] sb = { //size bar brush diameters. Can be of any length. (Just add and remove sizes as you please.)  If (ht/sb.length)>max(sb) they will overlap.
   5, 10, 20, 40, 60, 100
 };
-String baseURL = "http://dl.dropbox.com/u/1991504/p/KnctDrw/"; //include trailing slash.
 //--
 
 void setup() {
@@ -62,13 +60,6 @@ void setup() {
   pg.background(0);
   pg.noStroke();
   pg.endDraw();
-
-  try { 
-    pw = new PrintWriter(new FileWriter("C:/Users/Peter/Documents/Processing/KinectPGraphic/users.txt", true));
-  } 
-  catch (IOException e) { 
-    e.printStackTrace(); // Dump and primitive exception handling...
-  }
 }
 
 //every frame
@@ -175,12 +166,6 @@ void onLostUser(int userId)
   //save data
   String outstring = formatter.format(new Date());
   save(outstring + ".jpg"); //take a screenshot
-  pw.println(outstring);
-  pw.flush(); //save to users.txt
-  //  QRCode = zxing.generateQRCode(baseURL + outstring + ".html",width,height);  //generate a qr-code
-  //  image(QRCode,0,0); //draw the qr-code
-  //  fill(0);text(baseURL + outstring + ".html",0,height); //also write the URL
-  //  waitFrames = 1000; //suspend normal activity for this many frames
 
   //update userlist
   ArrayList users2 = new ArrayList();
